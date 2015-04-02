@@ -78,7 +78,7 @@ $rootScope.$on('$stateChangeError',
 });
 ```
 ## Parse Service in Ionic Framework
-It was important to me to not include the Parse functionality directly in the controller like so many of the other tutorials out there since in is not a best practice. But once you get into the service, you will see that the service is simply a wrapper around the specific [Parse Javascript API](https://parse.com/docs/js_guide#users) calls.
+It was important to me to not include the Parse functionality directly in the controller like so many of the other tutorials out there do; since it is not a best practice. But once you get into the service, you will see that the service is simply a wrapper around the specific [Parse Javascript API](https://parse.com/docs/js_guide#users) calls.
 ```javascript,linenums=true
 /**
  * www/js/user/services.js
