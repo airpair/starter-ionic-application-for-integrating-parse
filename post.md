@@ -31,7 +31,7 @@ The first Tab is set up as a list view, so that when a user clicks on an item in
 <h4>Detail View</h4>
 ![https://s3.amazonaws.com/f.cl.ly/items/0l3E2j2q3w1G0v2y3E2y/Image%202015-03-22%20at%2010.26.37%20PM.png](https://s3.amazonaws.com/f.cl.ly/items/0l3E2j2q3w1G0v2y3E2y/Image%202015-03-22%20at%2010.26.37%20PM.png)
 
-The second Tab in this setup as a "Settings Screen" that will pass in the User Object from Parse when the user selects the Tab.
+The second Tab is set up as a "Settings Screen" that will pass in the User Object from Parse when the user selects the Tab.
 <h4>Application Settings View</h4>
 ![https://s3.amazonaws.com/f.cl.ly/items/3D081H1416050g0d352e/Image%202015-03-22%20at%2010.30.08%20PM.png](https://s3.amazonaws.com/f.cl.ly/items/3D081H1416050g0d352e/Image%202015-03-22%20at%2010.30.08%20PM.png)
 
