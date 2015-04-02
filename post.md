@@ -24,7 +24,7 @@ Using the values from the Parse Console, set the properties in the app.js file s
 ## Starter App Project Structure
 The starter app is a Two-Tab based app with a Login Screen and an Account Creation Screen. The application will create Parse Users for you after it is configured properly.
 
-The first Tab is setup as a list view that when a used clicks on an item in the list a detail screen is rendered. The ui-router routes are already configured for this application behavior.
+The first Tab is set up as a list view, so that when a user clicks on an item in the list, a detail screen is rendered. The ui-router routes are already configured for this application behavior.
 
 <h4>List View</h4>
 ![https://s3.amazonaws.com/f.cl.ly/items/2O3N3c1W1O3m1O3n2Z0R/Image%202015-03-22%20at%2010.26.29%20PM.png](https://s3.amazonaws.com/f.cl.ly/items/2O3N3c1W1O3m1O3n2Z0R/Image%202015-03-22%20at%2010.26.29%20PM.png)
