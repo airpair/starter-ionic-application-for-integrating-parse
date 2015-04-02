@@ -62,7 +62,7 @@ If the `UserService.init()` function cannot resolve successfully, it returns the
 
 We listen for the `$stateChangeError` and if it is in fact the `noUser` error then we route to the Login Screen using the `app-login` state of the `ui-router`.
 
-Since the `tab` state is  `abstract` all child states of must also have successfully resolved the parent state, this ensures the user in logged in before executing any state of the application
+Since the `tab` state is  `abstract` all child states of it must also have successfully resolved the parent state, this ensures the user is logged in before executing any state of the application
 
 ```javascript,linenums=true
 $rootScope.$on('$stateChangeError',
