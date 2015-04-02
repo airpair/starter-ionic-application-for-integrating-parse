@@ -1,5 +1,5 @@
 ## Overiew
-This sample application is provided as a starter to get your [Ionic Framework](http://ionicframework.com/getting-started/) and [Parse Application](https://parse.com/products/core) up and running easily. Most of the fuss in these applications is figuring out login and account creation... This template solves that for you with a pattern that then can be utilized for a full-blown application; this is not a throw-aways tutorial.
+This sample application is provided as a starter to get your [Ionic Framework](http://ionicframework.com/getting-started/) and [Parse Application](https://parse.com/products/core) up and running easily. Most of the fuss in these applications is figuring out login and account creation... This template solves that for you with a pattern that then can be utilized for a full-blown application; this is not a throw-away tutorial.
 
 We have seperated out the templates, controllers, and services into a format that will be sustainable for your final solution.
 
@@ -10,6 +10,7 @@ The critical information needed after configuring your application is the `appli
 
 <h4>Parse Configuration Screen for Application</h4>
 ![http://cl.ly/image/0z2z1x1E1D0B/Image%202015-03-22%20at%209.49.55%20PM.png](http://cl.ly/image/0z2z1x1E1D0B/Image%202015-03-22%20at%209.49.55%20PM.png)
+TODO: This image doesnt display for some reason
 
 Using the values from the Parse Console, set the properties in the app.js file section shown below
 
@@ -23,14 +24,14 @@ Using the values from the Parse Console, set the properties in the app.js file s
 ## Starter App Project Structure
 The starter app is a Two-Tab based app with a Login Screen and an Account Creation Screen. The application will create Parse Users for you after it is configured properly.
 
-The first Tab is setup as a list view that when a used clicks on an item in the list a detail screen is rendered. The ui-router routes are already configured for this application behavior.
+The first Tab is set up as a list view, so that when a user clicks on an item in the list, a detail screen is rendered. The ui-router routes are already configured for this application behavior.
 
 <h4>List View</h4>
 ![https://s3.amazonaws.com/f.cl.ly/items/2O3N3c1W1O3m1O3n2Z0R/Image%202015-03-22%20at%2010.26.29%20PM.png](https://s3.amazonaws.com/f.cl.ly/items/2O3N3c1W1O3m1O3n2Z0R/Image%202015-03-22%20at%2010.26.29%20PM.png)
 <h4>Detail View</h4>
 ![https://s3.amazonaws.com/f.cl.ly/items/0l3E2j2q3w1G0v2y3E2y/Image%202015-03-22%20at%2010.26.37%20PM.png](https://s3.amazonaws.com/f.cl.ly/items/0l3E2j2q3w1G0v2y3E2y/Image%202015-03-22%20at%2010.26.37%20PM.png)
 
-The second Tab in this setup as a "Settings Screen" that will pass in the User Object from Parse when the user selects the Tab.
+The second Tab is set up as a "Settings Screen" that will pass in the User Object from Parse when the user selects the Tab.
 <h4>Application Settings View</h4>
 ![https://s3.amazonaws.com/f.cl.ly/items/3D081H1416050g0d352e/Image%202015-03-22%20at%2010.30.08%20PM.png](https://s3.amazonaws.com/f.cl.ly/items/3D081H1416050g0d352e/Image%202015-03-22%20at%2010.30.08%20PM.png)
 
@@ -61,7 +62,7 @@ If the `UserService.init()` function cannot resolve successfully, it returns the
 
 We listen for the `$stateChangeError` and if it is in fact the `noUser` error then we route to the Login Screen using the `app-login` state of the `ui-router`.
 
-Since the `tab` state is  `abstract` all child states of must also have successfully resolved the parent state, this ensures the user in logged in before executing any state of the application
+Since the `tab` state is  `abstract` all child states of it must also have successfully resolved the parent state, this ensures the user is logged in before executing any state of the application
 
 ```javascript,linenums=true
 $rootScope.$on('$stateChangeError',
@@ -77,7 +78,7 @@ $rootScope.$on('$stateChangeError',
 });
 ```
 ## Parse Service in Ionic Framework
-It was important to me to not include the Parse functionality directly in the controller like so many of the other tutorials out there since in is not a best practice. But once you get into the service, you will see that the service is simply a wrapper around the specific [Parse Javascript API](https://parse.com/docs/js_guide#users) calls.
+It was important to me to not include the Parse functionality directly in the controller like so many of the other tutorials out there do; since it is not a best practice. But once you get into the service, you will see that the service is simply a wrapper around the specific [Parse Javascript API](https://parse.com/docs/js_guide#users) calls.
 ```javascript,linenums=true
 /**
  * www/js/user/services.js
