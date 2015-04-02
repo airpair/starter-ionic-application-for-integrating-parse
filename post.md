@@ -10,6 +10,7 @@ The critical information needed after configuring your application is the `appli
 
 <h4>Parse Configuration Screen for Application</h4>
 ![http://cl.ly/image/0z2z1x1E1D0B/Image%202015-03-22%20at%209.49.55%20PM.png](http://cl.ly/image/0z2z1x1E1D0B/Image%202015-03-22%20at%209.49.55%20PM.png)
+TODO: This image doesnt display for some reason
 
 Using the values from the Parse Console, set the properties in the app.js file section shown below
 
